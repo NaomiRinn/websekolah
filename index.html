@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMK Pancabhakti - Sekolah Unggulan Berbasis Teknologi</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm smk-nav"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="images/logo pb.png"
+            alt="Logo SMK Pancabhakti"
+            height="40"
+            class="me-2"
+          />
+          <span class="fw-bold text-primary">SMK PANCABHAKTI BANJARNEGARA</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link smk-nav-link active" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link smk-nav-link dropdown-toggle"
+                href="#about"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Profil</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#teachers">Guru</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link smk-nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Program</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#programs">Semua Program</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Teknik Komputer & Jaringan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Teknik Bisnis Sepeda Motor</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Teknik Kendaraan Ringan</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Teknik Elektronika Industri</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smk-nav-link" href="#facilities">Fasilitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smk-nav-link" href="#news">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smk-nav-link" href="#gallery">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smk-nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+          <a href="#ppdb" class="btn btn-warning ms-3 fw-semibold smk-btn-ppdb">
+            <i class="bi bi-person-plus-fill me-1"></i>PPDB
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="smk-hero">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6">
+            <h1 class="smk-hero-title">
+              Selamat Datang di SMK Pancabhakti Banjarnegara
+            </h1>
+            <p class="smk-hero-desc">
+              Mencetak Generasi Unggul, Berkarakter, dan Siap Kerja di Era
+              Digital. Bersama kami wujudkan masa depan gemilang melalui
+              pendidikan vokasi berkualitas.
+            </p>
+            <div class="smk-hero-btns">
+              <a href="#programs" class="btn btn-warning btn-lg fw-semibold">
+                <i class="bi bi-book me-2"></i>Program Kami
+              </a>
+              <a href="#ppdb" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-info-circle me-2"></i>Info PPDB
+              </a>
+            </div>
+            <div class="smk-hero-stats">
+              <div class="smk-stat-item">
+                <i class="bi bi-people-fill smk-stat-icon"></i>
+                <div>
+                  <h4 class="smk-stat-num" data-counter="1250">0</h4>
+                  <small class="smk-stat-label">Siswa Aktif</small>
+                </div>
+              </div>
+              <div class="smk-stat-item">
+                <i class="bi bi-award-fill smk-stat-icon"></i>
+                <div>
+                  <h4 class="smk-stat-num" data-counter="45">0</h4>
+                  <small class="smk-stat-label">Prestasi</small>
+                </div>
+              </div>
+              <div class="smk-stat-item">
+                <i class="bi bi-building-fill smk-stat-icon"></i>
+                <div>
+                  <h4 class="smk-stat-num" data-counter="5">0</h4>
+                  <small class="smk-stat-label">Program Keahlian</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="smk-hero-img text-center">
+              <img
+                src="images/siswa smk.jpg"
+                alt="Siswa SMK"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="smk-about">
+      <div class="container">
+        <div class="smk-header text-center mb-5">
+          <h2 class="smk-title">Profil Sekolah</h2>
+          <p class="smk-subtitle">
+            SMK Unggulan di Banjarnegara yang berkomitmen mencetak lulusan siap
+            kerja
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="card-header d-flex align-items-center mb-3">
+                  <div class="smk-icon-circle smk-icon-vision">
+                    <i class="bi bi-eye-fill"></i>
+                  </div>
+                  <h3 class="card-title mb-0">Visi</h3>
+                </div>
+                <p class="card-text">
+                  Menjadi SMK unggulan yang menghasilkan lulusan berkompeten,
+                  berkarakter, berwawasan lingkungan, dan siap bersaing di era
+                  global.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="card-header d-flex align-items-center mb-3">
+                  <div class="smk-icon-circle smk-icon-mission">
+                    <i class="bi bi-bullseye"></i>
+                  </div>
+                  <h3 class="card-title mb-0">Misi</h3>
+                </div>
+                <ul class="mission-list">
+                  <li>
+                    Menyelenggarakan pendidikan berkualitas berbasis teknologi
+                  </li>
+                  <li>
+                    Mengembangkan kompetensi keahlian sesuai kebutuhan industri
+                  </li>
+                  <li>Membangun karakter peserta didik yang berakhlak mulia</li>
+                  <li>
+                    Menjalin kemitraan strategis dengan dunia usaha dan industri
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="smk-programs">
+      <div class="container">
+        <div class="smk-header text-center mb-5">
+          <h2 class="smk-title">Program Keahlian</h2>
+          <p class="smk-subtitle">
+            Pilih program keahlian yang sesuai dengan minat dan bakat Anda
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Program 1 - Teknik Komputer & Jaringan -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card smk-program-card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="smk-program-logo-wrapper">
+                  <img src="images/logo-tkj-1.png" alt="Logo Teknik Komputer & Jaringan" class="smk-program-logo">
+                </div>
+                <h4 class="smk-program-name">Teknik Komputer & Jaringan</h4>
+                <p class="smk-program-desc">
+                  Mempelajari jaringan komputer, pemrograman, cybersecurity, dan
+                  sistem teknologi informasi terkini.
+                </p>
+                <div class="smk-tags">
+                  <span class="smk-tag smk-tag-popular">Populer</span>
+                  <span class="smk-tag smk-tag-capacity">40 Siswa/Kelas</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="#" class="smk-btn-details">
+                  Selengkapnya <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 2 - Teknik Kendaraan Ringan -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card smk-program-card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="smk-program-logo-wrapper">
+                  <img src="images/TKR-1.jpg" alt="Logo Teknik Kendaraan Ringan" class="smk-program-logo">
+                </div>
+                <h4 class="smk-program-name">Teknik Kendaraan Ringan</h4>
+                <p class="smk-program-desc">
+                  Mempelajari perawatan, perbaikan, dan sistem kerja kendaraan
+                  ringan seperti mobil dan motor.
+                </p>
+                <div class="smk-tags">
+                  <span class="smk-tag smk-tag-trusted">Terpercaya</span>
+                  <span class="smk-tag smk-tag-capacity">36 Siswa/Kelas</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="#" class="smk-btn-details">
+                  Selengkapnya <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 3 - Teknik Bisnis Sepeda Motor -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card smk-program-card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="smk-program-logo-wrapper">
+                  <img src="images/tbsm.jpeg" alt="Logo Teknik Bisnis Sepeda Motor" class="smk-program-logo">
+                </div>
+                <h4 class="smk-program-name">Teknik Bisnis Sepeda Motor</h4>
+                <p class="smk-program-desc">
+                  Mengembangkan skill bisnis, pemasaran, kewirausahaan, dan
+                  manajemen penjualan di industri otomotif.
+                </p>
+                <div class="smk-tags">
+                  <span class="smk-tag smk-tag-innovative">Inovatif</span>
+                  <span class="smk-tag smk-tag-capacity">38 Siswa/Kelas</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="#" class="smk-btn-details">
+                  Selengkapnya <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 4 - Teknik Elektronika Industri -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card smk-program-card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="smk-program-logo-wrapper">
+                  <img src="images/Logo-TEI-1-1.png" alt="Logo Akuntansi & Keuangan" class="smk-program-logo">
+                </div>
+                <h4 class="smk-program-name">Teknik Elektronika Industri</h4>
+                <p class="smk-program-desc">
+                  bidang teknik yang fokus pada sistem elektronika untuk otomasi, kontrol, dan instrumentasi di industri
+                </p>
+                <div class="smk-tags">
+                  <span class="smk-tag smk-tag-trusted">Terpercaya</span>
+                  <span class="smk-tag smk-tag-capacity">35 Siswa/Kelas</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="#" class="smk-btn-details">
+                  Selengkapnya <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 5 - Desain Permodelan dan Interior Bangunan -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card smk-program-card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="smk-program-logo-wrapper">
+                  <img src="images/Logo-dpib-1.png" alt="Logo Desain Permodelan dan Interior Bangunan" class="smk-program-logo">
+                </div>
+                <h4 class="smk-program-name">Desain Permodelan dan Interior Bangunan</h4>
+                <p class="smk-program-desc">
+                  desain permodelan berfokus pada struktur dan kerangka luar bangunan, sedangkan desain interior berfokus pada ruang di dalam bangunan untuk menciptakan lingkungan yang fungsional dan estetis.
+                </p>
+                <div class="smk-tags">
+                  <span class="smk-tag smk-tag-innovative">Inovatif</span>
+                  <span class="smk-tag smk-tag-capacity">37 Siswa/Kelas</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="#" class="smk-btn-details">
+                  Selengkapnya <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        <div class="text-center mt-5">
+          <a href="#" class="smk-btn-view">
+            <i class="bi bi-list-ul me-2"></i>Lihat Semua Program
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="smk-teachers">
+      <div class="container">
+        <div class="smk-header text-center mb-5">
+          <h2 class="smk-title">Guru & Tenaga Pendidik</h2>
+          <p class="smk-subtitle">
+            Tenaga pengajar profesional dan berpengalaman di bidangnya masing-masing
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Guru 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card smk-teacher-card border-0 shadow-sm h-100">
+              <div class="smk-teacher-img-wrap">
+                <img src="images/icon ug.jpg" class="card-img-top smk-teacher-img" alt="Drs. H. SUTARNO, M.Pd.">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="smk-teacher-name">Drs. H. SUTARNO, M.Pd.</h5>
+                <p class="smk-teacher-subject">Kepala Sekolah</p>
+                <p class="teacher-qualification">S2 Pendidikan</p>
+                <div class="teacher-experience">
+                  <small class="text-muted">Pengalaman mengajar lebih dari 20 tahun</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guru 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card smk-teacher-card border-0 shadow-sm h-100">
+              <div class="smk-teacher-img-wrap">
+                <img src="images/icon ug.jpg" class="card-img-top smk-teacher-img" alt="SRI WAHYUNI, S.Pd.">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="smk-teacher-name">SRI WAHYUNI, S.Pd.</h5>
+                <p class="smk-teacher-subject">Guru Produktif</p>
+                <p class="teacher-qualification">S1 Pendidikan</p>
+                <div class="teacher-experience">
+                  <small class="text-muted">Spesialisasi bidang keahlian</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guru 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card smk-teacher-card border-0 shadow-sm h-100">
+              <div class="smk-teacher-img-wrap">
+                <img src="images/icon ug.jpg" class="card-img-top smk-teacher-img" alt="WAHYU NUR CAHYO, S.Pd.">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="smk-teacher-name">WAHYU NUR CAHYO, S.Pd.</h5>
+                <p class="smk-teacher-subject">Guru Teknik</p>
+                <p class="teacher-qualification">S1 Teknik</p>
+                <div class="teacher-experience">
+                  <small class="text-muted">Ahli dalam praktikum teknik</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guru 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card smk-teacher-card border-0 shadow-sm h-100">
+              <div class="smk-teacher-img-wrap">
+                <img src="images/icon ug.jpg" class="card-img-top smk-teacher-img" alt="NUR CAHYONO, S.Pd.">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="smk-teacher-name">NUR CAHYONO, S.Pd.</h5>
+                <p class="smk-teacher-subject">Guru Produktif</p>
+                <p class="teacher-qualification">S1 Pendidikan</p>
+                <div class="teacher-experience">
+                  <small class="text-muted">Pengajar berdedikasi tinggi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guru 5 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card smk-teacher-card border-0 shadow-sm h-100">
+              <div class="smk-teacher-img-wrap">
+                <img src="images/icon ug.jpg" class="card-img-top smk-teacher-img" alt="SRI MARTINI, S.Pd.">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="smk-teacher-name">SRI MARTINI, S.Pd.</h5>
+                <p class="smk-teacher-subject">Guru Bahasa</p>
+                <p class="teacher-qualification">S1 Pendidikan Bahasa</p>
+                <div class="teacher-experience">
+                  <small class="text-muted">Spesialis bahasa dan sastra</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guru 6 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card smk-teacher-card border-0 shadow-sm h-100">
+              <div class="smk-teacher-img-wrap">
+                <img src="images/icon ug.jpg" class="card-img-top smk-teacher-img" alt="TRI WAHYUNI, S.Pd.">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="smk-teacher-name">TRI WAHYUNI, S.Pd.</h5>
+                <p class="smk-teacher-subject">Guru Matematika</p>
+                <p class="teacher-qualification">S1 Pendidikan Matematika</p>
+                <div class="teacher-experience">
+                  <small class="text-muted">Pembelajaran matematika menyenangkan</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guru 7 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card smk-teacher-card border-0 shadow-sm h-100">
+              <div class="smk-teacher-img-wrap">
+                <img src="images/icon ug.jpg" class="card-img-top smk-teacher-img" alt="SULISTYANINGSIH, S.Pd.">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="smk-teacher-name">SULISTYANINGSIH, S.Pd.</h5>
+                <p class="smk-teacher-subject">Guru IPA</p>
+                <p class="teacher-qualification">S1 Pendidikan IPA</p>
+                <div class="teacher-experience">
+                  <small class="text-muted">Ahli dalam eksperimen sains</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guru 8 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card smk-teacher-card border-0 shadow-sm h-100">
+              <div class="smk-teacher-img-wrap">
+                <img src="images/icon ug.jpg" class="card-img-top smk-teacher-img" alt="AGUS SETIAWAN, S.Pd.">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="smk-teacher-name">AGUS SETIAWAN, S.Pd.</h5>
+                <p class="smk-teacher-subject">Guru Olahraga</p>
+                <p class="teacher-qualification">S1 Pendidikan Olahraga</p>
+                <div class="teacher-experience">
+                  <small class="text-muted">Pelatih berbagai cabang olahraga</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol Lihat Semua Guru -->
+        <div class="text-center mt-5">
+          <a href="#" target="_blank" class="smk-btn-view">
+            <i class="bi bi-people-fill me-2"></i>Lihat Semua Guru
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="smk-facilities">
+      <div class="container">
+        <div class="smk-header text-center mb-5">
+          <h2 class="smk-title">Fasilitas Sekolah</h2>
+          <p class="smk-subtitle">
+            Didukung fasilitas modern untuk menunjang proses belajar mengajar
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card smk-facility-card border-0 shadow-sm h-100">
+              <img
+                src="images/labkomputer.jpeg"
+                class="card-img-top smk-facility-img"
+                alt="Lab Komputer"
+              />
+              <div class="card-body">
+                <h5 class="facility-name">Lab Komputer</h5>
+                <p class="facility-description">
+                  Laboratorium komputer dengan spesifikasi terkini dan jaringan
+                  internet cepat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card smk-facility-card border-0 shadow-sm h-100">
+              <img
+                src="images/perpustakaan.jpg"
+                class="card-img-top smk-facility-img"
+                alt="Perpustakaan"
+              />
+              <div class="card-body">
+                <h5 class="facility-name">Perpustakaan Digital</h5>
+                <p class="facility-description">
+                  Koleksi buku lengkap dan sistem digital untuk kemudahan akses.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card smk-facility-card border-0 shadow-sm h-100">
+              <img
+                src="images/labbahasa.jpeg"
+                class="card-img-top smk-facility-img"
+                alt="Lab Bahasa"
+              />
+              <div class="card-body">
+                <h5 class="facility-name">Lab Bahasa</h5>
+                <p class="facility-description">
+                  Fasilitas modern untuk pembelajaran bahasa asing yang
+                  interaktif.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card smk-facility-card border-0 shadow-sm h-100">
+              <img
+                src="images/lapangan.jpg"
+                class="card-img-top smk-facility-img"
+                alt="Lapangan Olahraga"
+              />
+              <div class="card-body">
+                <h5 class="facility-name">Lapangan Olahraga</h5>
+                <p class="facility-description">
+                  Lapangan serbaguna untuk berbagai kegiatan olahraga dan
+                  ekstrakurikuler.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="smk-news">
+      <div class="container">
+        <div class="smk-header text-center mb-5">
+          <h2 class="smk-title">Berita & Kegiatan</h2>
+          <p class="smk-subtitle">
+            Informasi terbaru seputar kegiatan dan prestasi sekolah
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- News 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card smk-news-card border-0 shadow-sm h-100">
+              <img
+                src="images/juarapramuka.jpeg"
+                class="card-img-top smk-news-img"
+                alt="Kegiatan Pramuka"
+              />
+              <div class="card-body">
+                <span class="smk-category smk-category-activity">Kegiatan</span>
+                <h5 class="smk-news-title">Kegiatan Pramuka Angkatan 2024</h5>
+                <p class="smk-news-excerpt">
+                  Siswa-siswi mengikuti kegiatan kepramukaan untuk membangun
+                  karakter dan leadership di alam terbuka.
+                </p>
+                <div
+                  class="news-meta d-flex justify-content-between align-items-center"
+                >
+                  <small class="news-date">
+                    <i class="bi bi-calendar me-1"></i>15 Des 2024
+                  </small>
+                  <a href="#" class="smk-read-more">
+                    Baca Selengkapnya <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- News 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card smk-news-card border-0 shadow-sm h-100">
+              <img
+                src="images/juarakomputer.jpeg"
+                class="card-img-top smk-news-img"
+                alt="Lomba Kompetensi"
+              />
+              <div class="card-body">
+                <span class="smk-category smk-category-achievement">Prestasi</span>
+                <h5 class="smk-news-title">Juara 1 Lomba Kompetensi Siswa</h5>
+                <p class="smk-news-excerpt">
+                  Siswa kami meraih juara 1 dalam Lomba Kompetensi Siswa tingkat
+                  provinsi bidang Teknik Komputer.
+                </p>
+                <div
+                  class="news-meta d-flex justify-content-between align-items-center"
+                >
+                  <small class="news-date">
+                    <i class="bi bi-calendar me-1"></i>10 Des 2024
+                  </small>
+                  <a href="#" class="smk-read-more">
+                    Baca Selengkapnya <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- News 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card smk-news-card border-0 shadow-sm h-100">
+              <img
+                src="images/workshop.jpeg"
+                class="card-img-top smk-news-img"
+                alt="Workshop Industri"
+              />
+              <div class="card-body">
+                <span class="smk-category smk-category-workshop">Workshop</span>
+                <h5 class="smk-news-title">Workshop Kerjasama dengan Industri</h5>
+                <p class="smk-news-excerpt">
+                  Program workshop bersama mitra industri untuk mempersiapkan
+                  siswa memasuki dunia kerja.
+                </p>
+                <div
+                  class="news-meta d-flex justify-content-between align-items-center"
+                >
+                  <small class="news-date">
+                    <i class="bi bi-calendar me-1"></i>5 Des 2024
+                  </small>
+                  <a href="#" class="smk-read-more">
+                    Baca Selengkapnya <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="#" class="smk-btn-view">
+            <i class="bi bi-newspaper me-2"></i>Lihat Semua Berita
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="smk-contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="smk-contact-title">Hubungi Kami</h2>
+            <p class="smk-contact-desc">
+              Butuh informasi lebih lanjut? Jangan ragu untuk menghubungi kami.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item d-flex align-items-center mb-3">
+                <i class="bi bi-geo-alt-fill smk-contact-icon"></i>
+                <div>
+                  <h5 class="contact-label">Alamat</h5>
+                  <p class="contact-text">
+                    Jl. Pendidikan No. 123, Banjarnegara, Jawa Tengah
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item d-flex align-items-center mb-3">
+                <i class="bi bi-telephone-fill smk-contact-icon"></i>
+                <div>
+                  <h5 class="contact-label">Telepon</h5>
+                  <p class="contact-text">(0286) 123456</p>
+                </div>
+              </div>
+              <div class="contact-item d-flex align-items-center mb-3">
+                <i class="bi bi-envelope-fill smk-contact-icon"></i>
+                <div>
+                  <h5 class="contact-label">Email</h5>
+                  <p class="contact-text">info@smkpancabhakti.sch.id</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="smk-social">
+              <a href="#" class="smk-social-link">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="smk-social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="smk-social-link">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="#" class="smk-social-link">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card smk-contact-form shadow-lg">
+              <div class="card-body p-4">
+                <h4 class="smk-form-title">Kirim Pesan</h4>
+                <form id="contactForm">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control smk-form-input"
+                        placeholder="Nama Lengkap"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="email"
+                        class="form-control smk-form-input"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        class="form-control smk-form-input"
+                        placeholder="Subjek"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        class="form-control smk-form-textarea"
+                        rows="4"
+                        placeholder="Pesan Anda"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="smk-btn-submit w-100">
+                        <i class="bi bi-send me-2"></i>Kirim Pesan
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="smk-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5 class="smk-footer-title">SMK PANCABHAKTI BANJARNEGARA</h5>
+            <p class="smk-footer-desc">
+              Mencerdaskan kehidupan bangsa melalui pendidikan vokasi yang
+              berkualitas, berkarakter, dan berwawasan lingkungan.
+            </p>
+            <div class="smk-footer-social">
+              <a href="#" class="smk-footer-icon"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="smk-footer-icon"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="smk-footer-icon"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="smk-footer-icon"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6 class="smk-footer-subtitle">Menu Cepat</h6>
+            <ul class="smk-footer-links">
+              <li class="smk-footer-item">
+                <a href="#home" class="smk-footer-link">Beranda</a>
+              </li>
+              <li class="smk-footer-item">
+                <a href="#about" class="smk-footer-link">Profil</a>
+              </li>
+              <li class="smk-footer-item">
+                <a href="#programs" class="smk-footer-link">Program</a>
+              </li>
+              <li class="smk-footer-item">
+                <a href="#news" class="smk-footer-link">Berita</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h6 class="smk-footer-subtitle">Program Keahlian</h6>
+            <ul class="smk-footer-links">
+              <li class="smk-footer-item">
+                <a href="#" class="smk-footer-link">Teknik Komputer & Jaringan</a>
+              </li>
+              <li class="smk-footer-item">
+                <a href="#" class="smk-footer-link">Teknik Bisnis Sepeda Motor</a>
+              </li>
+              <li class="smk-footer-item">
+                <a href="#" class="smk-footer-link">Teknik Kendaraan Ringan</a>
+              </li>
+              <li class="smk-footer-item">
+                <a href="#" class="smk-footer-link">Teknik Elektronika Industri</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h6 class="smk-footer-subtitle">Kontak</h6>
+            <ul class="smk-footer-contact">
+              <li class="smk-contact-item">
+                <i class="bi bi-geo-alt me-2"></i>Jl. Pendidikan No. 123,
+                Banjarnegara
+              </li>
+              <li class="smk-contact-item">
+                <i class="bi bi-telephone me-2"></i>(0286) 123456
+              </li>
+              <li class="smk-contact-item">
+                <i class="bi bi-envelope me-2"></i>info@smkpancabhakti.sch.id
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="smk-footer-divider" />
+
+        <div class="smk-footer-bottom">
+          <div class="smk-copyright">
+            <p>
+              &copy; 2025 SMK Pancabhakti Banjarnegara. All rights reserved.
+            </p>
+          </div>
+          <div class="smk-footer-links-bottom">
+            <a href="#" class="smk-footer-link-bottom">Privacy Policy</a>
+            <a href="#" class="smk-footer-link-bottom">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating PPDB Button -->
+    <div class="smk-floating">
+      <a href="#ppdb" class="smk-btn-float">
+        <i class="bi bi-person-plus-fill me-2"></i>PPDB 2025
+      </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,907 @@
+/* ==================== VARIABEL & SETUP DASAR ==================== */
+:root {
+    --smk-primary: #0d6efd;
+    --smk-secondary: #6c757d;
+    --smk-success: #198754;
+    --smk-warning: #ffc107;
+    --smk-danger: #dc3545;
+    --smk-dark: #212529;
+    --smk-light: #f8f9fa;
+    --smk-white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    padding-top: 76px;
+}
+
+/* ==================== NAVIGASI ==================== */
+.smk-nav {
+    transition: all 0.3s ease;
+}
+
+.smk-nav.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.smk-nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.smk-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--smk-primary);
+    transition: width 0.3s ease;
+}
+
+.smk-nav-link:hover::after,
+.smk-nav-link.active::after {
+    width: 100%;
+}
+
+.smk-btn-ppdb {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.smk-btn-ppdb:hover {
+    background: transparent !important;
+    border-color: var(--smk-warning);
+    color: var(--smk-dark) !important;
+    transform: translateY(-2px);
+}
+
+/* ==================== HERO SECTION ==================== */
+.smk-hero {
+    background: linear-gradient(135deg, var(--smk-primary), #0a58ca);
+    color: var(--smk-white);
+    padding: 2rem 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.smk-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.smk-hero-desc {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.smk-hero-btns {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.smk-hero-stats {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.smk-stat-item {
+    display: flex;
+    align-items: center;
+    color: var(--smk-white);
+}
+
+.smk-stat-icon {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    opacity: 0.9;
+}
+
+.smk-stat-num {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.smk-stat-label {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.smk-hero-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: smk-float 3s ease-in-out infinite;
+}
+
+@keyframes smk-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* ==================== SECTION HEADER ==================== */
+.smk-header {
+    margin-bottom: 4rem;
+}
+
+.smk-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--smk-primary);
+    margin-bottom: 1rem;
+}
+
+.smk-subtitle {
+    font-size: 1.2rem;
+    color: var(--smk-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ==================== ABOUT SECTION ==================== */
+.smk-about {
+    padding: 5rem 0;
+    background: var(--smk-light);
+}
+
+.smk-icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.smk-icon-vision {
+    background: var(--smk-primary);
+    color: var(--smk-white);
+}
+
+.smk-icon-mission {
+    background: var(--smk-success);
+    color: var(--smk-white);
+}
+
+/* ==================== PROGRAM SECTION ==================== */
+/* ==================== PROGRAM SECTION ==================== */
+.smk-programs {
+    padding: 5rem 0;
+}
+
+.smk-program-card {
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.smk-program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* ==================== PROGRAM LOGO STYLING ==================== */
+.smk-program-logo-wrapper {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background: var(--smk-white);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 2px solid transparent;
+}
+
+.smk-program-card:hover .smk-program-logo-wrapper {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Warna border berbeda untuk setiap program saat hover */
+.smk-program-card:nth-child(1):hover .smk-program-logo-wrapper {
+    border-color: #0d6efd;
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.2);
+}
+
+.smk-program-card:nth-child(2):hover .smk-program-logo-wrapper {
+    border-color: #198754;
+    box-shadow: 0 12px 30px rgba(25, 135, 84, 0.2);
+}
+
+.smk-program-card:nth-child(3):hover .smk-program-logo-wrapper {
+    border-color: #ffc107;
+    box-shadow: 0 12px 30px rgba(255, 193, 7, 0.2);
+}
+
+.smk-program-card:nth-child(4):hover .smk-program-logo-wrapper {
+    border-color: #6f42c1;
+    box-shadow: 0 12px 30px rgba(111, 66, 193, 0.2);
+}
+
+.smk-program-card:nth-child(5):hover .smk-program-logo-wrapper {
+    border-color: #fd7e14;
+    box-shadow: 0 12px 30px rgba(253, 126, 20, 0.2);
+}
+
+.smk-program-card:nth-child(6):hover .smk-program-logo-wrapper {
+    border-color: #20c997;
+    box-shadow: 0 12px 30px rgba(32, 201, 151, 0.2);
+}
+
+.smk-program-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    filter: none; /* Menghapus filter putih */
+}
+
+.smk-program-card:hover .smk-program-logo {
+    transform: scale(1.05);
+}
+
+/* Warna teks dan aksen berbeda untuk setiap program */
+.smk-program-card:nth-child(1) .smk-program-name {
+    color: #0d6efd;
+}
+
+.smk-program-card:nth-child(2) .smk-program-name {
+    color: #198754;
+}
+
+.smk-program-card:nth-child(3) .smk-program-name {
+    color: #e0a800;
+}
+
+.smk-program-card:nth-child(4) .smk-program-name {
+    color: #6f42c1;
+}
+
+.smk-program-card:nth-child(5) .smk-program-name {
+    color: #fd7e14;
+}
+
+.smk-program-card:nth-child(6) .smk-program-name {
+    color: #20c997;
+}
+
+/* Tombol details dengan warna sesuai program */
+.smk-program-card:nth-child(1) .smk-btn-details {
+    color: #0d6efd;
+}
+
+.smk-program-card:nth-child(2) .smk-btn-details {
+    color: #198754;
+}
+
+.smk-program-card:nth-child(3) .smk-btn-details {
+    color: #e0a800;
+}
+
+.smk-program-card:nth-child(4) .smk-btn-details {
+    color: #6f42c1;
+}
+
+.smk-program-card:nth-child(5) .smk-btn-details {
+    color: #fd7e14;
+}
+
+.smk-program-card:nth-child(6) .smk-btn-details {
+    color: #20c997;
+}
+
+.smk-program-card:nth-child(1) .smk-btn-details:hover {
+    color: #0b5ed7;
+}
+
+.smk-program-card:nth-child(2) .smk-btn-details:hover {
+    color: #146c43;
+}
+
+.smk-program-card:nth-child(3) .smk-btn-details:hover {
+    color: #b38f00;
+}
+
+.smk-program-card:nth-child(4) .smk-btn-details:hover {
+    color: #5a2d9c;
+}
+
+.smk-program-card:nth-child(5) .smk-btn-details:hover {
+    color: #e55a00;
+}
+
+.smk-program-card:nth-child(6) .smk-btn-details:hover {
+    color: #1aa179;
+}
+
+.smk-program-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.smk-program-desc {
+    color: var(--smk-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.smk-tags {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.smk-tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.smk-tag-popular {
+    background: var(--smk-primary);
+    color: var(--smk-white);
+}
+
+.smk-tag-trusted {
+    background: var(--smk-success);
+    color: var(--smk-white);
+}
+
+.smk-tag-innovative {
+    background: var(--smk-warning);
+    color: var(--smk-dark);
+}
+
+.smk-tag-capacity {
+    background: var(--smk-secondary);
+    color: var(--smk-white);
+}
+
+.smk-btn-details {
+    color: var(--smk-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    display: block;
+    text-align: center;
+}
+
+.smk-btn-details:hover {
+    color: #0b5ed7;
+}
+
+.smk-btn-view {
+    background: var(--smk-primary);
+    color: var(--smk-white);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid transparent;
+}
+
+.smk-btn-view:hover {
+    background: transparent;
+    border-color: var(--smk-primary);
+    color: var(--smk-primary);
+    transform: translateY(-2px);
+}
+
+/* ==================== FALLBACK DAN RESPONSIVE ==================== */
+/* Fallback untuk logo yang tidak ada */
+.smk-program-logo-wrapper::before {
+    content: '📚';
+    font-size: 3rem;
+    display: none;
+    color: var(--smk-secondary);
+}
+
+.smk-program-logo[src=""],
+.smk-program-logo:not([src]) {
+    opacity: 0;
+}
+
+.smk-program-logo[src=""]::before,
+.smk-program-logo:not([src])::before {
+    display: block;
+}
+
+/* Responsive design untuk program logo */
+@media (max-width: 768px) {
+    .smk-program-logo-wrapper {
+        width: 120px;
+        height: 120px;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+    
+    .smk-program-logo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .smk-program-name {
+        font-size: 1.1rem;
+    }
+}
+
+/* Animation untuk program cards dengan logo */
+@keyframes smk-logo-float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.smk-program-card:hover .smk-program-logo-wrapper {
+    animation: smk-logo-float 2s ease-in-out infinite;
+}
+
+/* ==================== TEACHERS SECTION ==================== */
+.smk-teachers {
+    padding: 5rem 0;
+    background: var(--smk-light);
+}
+
+.smk-teacher-card {
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.smk-teacher-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+}
+
+.smk-teacher-img-wrap {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.smk-teacher-img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.smk-teacher-card:hover .smk-teacher-img {
+    transform: scale(1.05);
+}
+
+.smk-teacher-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--smk-dark);
+    margin-bottom: 0.5rem;
+}
+
+.smk-teacher-subject {
+    color: var(--smk-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+/* ==================== FACILITIES SECTION ==================== */
+.smk-facilities {
+    padding: 5rem 0;
+    background: var(--smk-light);
+}
+
+.smk-facility-card {
+    transition: transform 0.3s ease;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.smk-facility-card:hover {
+    transform: scale(1.05);
+}
+
+.smk-facility-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ==================== NEWS SECTION ==================== */
+.smk-news {
+    padding: 5rem 0;
+}
+
+.smk-news-card {
+    transition: transform 0.3s ease;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.smk-news-card:hover {
+    transform: translateY(-5px);
+}
+
+.smk-news-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.smk-category {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.smk-category-activity {
+    background: var(--smk-primary);
+    color: var(--smk-white);
+}
+
+.smk-category-achievement {
+    background: var(--smk-success);
+    color: var(--smk-white);
+}
+
+.smk-category-workshop {
+    background: var(--smk-warning);
+    color: var(--smk-dark);
+}
+
+.smk-news-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--smk-dark);
+    line-height: 1.4;
+}
+
+.smk-news-excerpt {
+    color: var(--smk-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.smk-read-more {
+    color: var(--smk-primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.smk-read-more:hover {
+    color: #0b5ed7;
+}
+
+/* ==================== CONTACT SECTION ==================== */
+.smk-contact {
+    padding: 5rem 0;
+    background: var(--smk-primary);
+    color: var(--smk-white);
+}
+
+.smk-contact-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.smk-contact-desc {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.smk-contact-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    opacity: 0.9;
+    margin-top: 0.25rem;
+}
+
+.smk-social {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.smk-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--smk-white);
+    border-radius: 50%;
+    color: var(--smk-white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.smk-social-link:hover {
+    background: var(--smk-white);
+    color: var(--smk-primary);
+    transform: translateY(-2px);
+}
+
+.smk-contact-form {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.smk-form-title {
+    color: var(--smk-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.smk-form-input, .smk-form-textarea {
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.smk-form-input:focus, .smk-form-textarea:focus {
+    border-color: var(--smk-primary);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.smk-btn-submit {
+    background: var(--smk-primary);
+    color: var(--smk-white);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.smk-btn-submit:hover {
+    background: #0b5ed7;
+    transform: translateY(-2px);
+}
+
+/* ==================== FOOTER ==================== */
+.smk-footer {
+    background: var(--smk-dark);
+    color: var(--smk-white);
+    padding: 3rem 0 1rem;
+}
+
+.smk-footer-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--smk-warning);
+}
+
+.smk-footer-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--smk-warning);
+}
+
+.smk-footer-desc {
+    color: rgba(255,255,255,0.7);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.smk-footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.smk-footer-icon {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.smk-footer-icon:hover {
+    color: var(--smk-white);
+}
+
+.smk-footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.smk-footer-item {
+    margin-bottom: 0.5rem;
+}
+
+.smk-footer-link {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.smk-footer-link:hover {
+    color: var(--smk-white);
+}
+
+.smk-footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.smk-contact-item {
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.smk-footer-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin: 2rem 0;
+}
+
+.smk-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.smk-copyright {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+}
+
+.smk-footer-links-bottom {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.smk-footer-link-bottom {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.smk-footer-link-bottom:hover {
+    color: var(--smk-white);
+}
+
+/* ==================== FLOATING BUTTON ==================== */
+.smk-floating {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.smk-btn-float {
+    background: linear-gradient(135deg, var(--smk-warning), #e0a800);
+    color: var(--smk-dark);
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    animation: smk-pulse 2s infinite;
+}
+
+@keyframes smk-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.smk-btn-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 193, 7, 0.6);
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+    body {
+        padding-top: 66px;
+    }
+    
+    .smk-hero-title {
+        font-size: 2rem;
+    }
+    
+    .smk-hero-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .smk-hero-btns .btn {
+        width: 200px;
+        text-align: center;
+    }
+    
+    .smk-hero-stats {
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .smk-title {
+        font-size: 2rem;
+    }
+    
+    .smk-footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .smk-floating {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .smk-btn-float {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9rem;
+    }
+    
+    .smk-program-icon {
+        width: 80px;
+        height: 80px;
+        padding: 0.75rem;
+    }
+    
+    .smk-program-img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .smk-teacher-img-wrap {
+        height: 200px;
+    }
+    
+    .smk-teacher-name {
+        font-size: 1rem;
+    }
+}
