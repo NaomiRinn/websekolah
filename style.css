@@ -158,6 +158,37 @@ body {
     background: var(--smk-light);
 }
 
+.smk-history-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.smk-history-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--smk-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.smk-history-content {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: var(--smk-dark);
+    background: var(--smk-white);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+}
+
+.smk-history-content p {
+    margin-bottom: 1.5rem;
+}
+
 .smk-icon-circle {
     width: 60px;
     height: 60px;
@@ -177,8 +208,6 @@ body {
     background: var(--smk-success);
     color: var(--smk-white);
 }
-
-/* ==================== PROGRAM SECTION ==================== */
 /* ==================== PROGRAM SECTION ==================== */
 .smk-programs {
     padding: 5rem 0;
